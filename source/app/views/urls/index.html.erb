@@ -1,0 +1,9 @@
+
+<%= link_to 'Create Url', new_url_path%>
+<table>
+	<% @urls.each do |url| %>
+		<tr>
+			<td><%=link_to "#{request.domain}/urls/#{url.key}", "urls/#{url.key}"%><td>		
+		</tr>
+	<%end%>
+</table>
